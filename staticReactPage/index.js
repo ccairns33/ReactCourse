@@ -19,13 +19,14 @@ function React_facts() {
     </ul>
   );
 }
-
+function Page() {
+  return (
+    <div>
+      <React_logo />
+      <Page_header />
+      <React_facts />
+    </div>
+  );
+}
 const root = document.getElementById("root");
-ReactDOM.render(
-  <div>
-    <React_logo />
-    <Page_header />
-    <React_facts />
-  </div>,
-  root
-);
+ReactDOM.render(<Page />, root);

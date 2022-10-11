@@ -2,7 +2,11 @@ function Header() {
   return (
     <header>
       <nav className="nav-bar">
-        <img src="./react-logo.png" alt="react logo" width="100px"></img>
+        <img
+          className="react-logo"
+          src="./react-logo.png"
+          alt="react logo"
+        ></img>
         <ul className="nav-items">
           <li>Pricing</li>
           <li>About</li>
@@ -26,12 +30,22 @@ function Main_content() {
     </ul>
   );
 }
+function Footer() {
+  return (
+    <footer>
+      <small>Created by ccairns33</small>
+    </footer>
+  );
+}
 function Page() {
   return (
     <div>
       <Header />
-      <Page_title />
-      <Main_content />
+      <div className="content-container">
+        <Page_title />
+        <Main_content />
+      </div>
+      <Footer />
     </div>
   );
 }

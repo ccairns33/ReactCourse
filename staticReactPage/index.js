@@ -1,3 +1,6 @@
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// install dependencies and get rid of text/babel in script
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">

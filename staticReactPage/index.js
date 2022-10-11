@@ -1,14 +1,21 @@
-function React_logo() {
+function Header() {
   return (
-    <nav>
-      <img src="./react-logo.png" alt="react logo" width="40px"></img>
-    </nav>
+    <header>
+      <nav className="nav-bar">
+        <img src="./react-logo.png" alt="react logo" width="100px"></img>
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
   );
 }
-function Page_header() {
+function Page_title() {
   return <h1>Fun Facts about React</h1>;
 }
-function React_facts() {
+function Main_content() {
   return (
     <ul>
       <li>Was first released in 2013</li>
@@ -22,9 +29,9 @@ function React_facts() {
 function Page() {
   return (
     <div>
-      <React_logo />
-      <Page_header />
-      <React_facts />
+      <Header />
+      <Page_title />
+      <Main_content />
     </div>
   );
 }

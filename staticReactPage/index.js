@@ -16,6 +16,7 @@ function Header() {
     </header>
   );
 }
+
 function Page_title() {
   return <h1>Fun Facts about React</h1>;
 }
@@ -37,7 +38,7 @@ function Footer() {
     </footer>
   );
 }
-function Page() {
+function App() {
   return (
     <div>
       <Header />
@@ -50,4 +51,4 @@ function Page() {
   );
 }
 const root = document.getElementById("root");
-ReactDOM.render(<Page />, root);
+ReactDOM.render(<App />, root);
